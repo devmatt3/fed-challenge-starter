@@ -1,0 +1,65 @@
+/***********
+ ** Fonts **
+ ***********/
+
+ $path: "../fonts/OpenSans/OpenSans";
+
+ @font-face {
+    font-family: 'OS';
+    font-weight: 800;
+    src: url('#{$path}-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OS';
+    font-weight: 700;
+    src: url('#{$path}-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OS';
+    font-weight: 500;
+    src: url('#{$path}-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OS';
+    font-weight: 400;
+    src: url('#{$path}-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OS';
+    font-weight: 300;
+    src: url('#{$path}-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OS Italic';
+    font-weight: 800;
+    src: url('#{$path}-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OS Italic';
+    font-weight: 700;
+    src: url('#{$path}-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OS Italic';
+    font-weight: 500;
+    src: url('#{$path}-SemiBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OS Italic';
+    font-weight: 400;
+    src: url('#{$path}-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OS Italic';
+    font-weight: 300;
+    src: url('#{$path}-LightItalic.ttf') format('truetype');
+}

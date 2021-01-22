@@ -1,0 +1,173 @@
+@import "../../../styles/base/Base.module.scss";
+
+.CardContainer {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    width: 75vw;
+    padding-bottom: 6vw;
+    margin: 3vw 0;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+
+.SelectedCard {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.CardContentWrap {
+    padding: 2vw 2.5vw;
+}
+
+.ImageContainer {
+    position: relative;
+}
+
+.CardImageOverlay {
+    position: absolute;
+    border-top-right-radius: 8px;
+    width: 39%;
+    height: 98%;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.CardOverlayWrap {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: $white;
+    text-transform: uppercase;
+
+    img {
+        width: 5vw;
+    }
+}
+
+.OverlayWorkoutCopy {
+    margin: 4vw 0;
+}
+
+.CardImage {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.CardIntroWrap {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    line-height: 4vw;
+    letter-spacing: 0.4px;
+
+    h2 {
+        width: 80%;
+    }
+}
+
+.CardThumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6%;
+}
+
+.CardDetailsWrap {
+    display: flex;
+    justify-content: space-between;
+    width: 28%;
+    margin-top: 2vw;
+}
+
+.CardTimeWrap,
+.CardDistanceWrap {
+    display: flex;
+
+    h4 {
+        margin-left: 3px;
+    }
+}
+
+.CardViewCopy {
+    position: absolute;
+    bottom: 2vw;
+    left: 3vw;
+    color: $blue;
+    text-transform: uppercase;
+}
+
+@media #{$mq-small} {
+}
+
+@media #{$mq-medium}, print {
+    .CardContainer {
+        width: des(288px);
+        height: des(280px);
+        margin: 1.5vw 0 0 0;
+    }
+
+    .CardContentWrap {
+        padding: 0.8vw;
+    }
+
+    .CardOverlayWrap {
+        img {
+            width: 1.3vw;
+        }
+    }
+
+    .OverlayWorkoutCopy {
+        margin: 1vw 0;
+    }
+
+    .CardIntroWrap {
+        line-height: 1.2vw;
+
+        h2 {
+            width: 85%;
+        }
+    }
+
+    .CardThumb {
+        width: 11%;
+    }
+
+    .CardDetailsWrap {
+        width: 8vw;
+        margin: 0.55vw 0 0 3px;
+    }
+
+    .CardTimeWrap,
+    .CardDistanceWrap {
+        h4 {
+            margin-left: 5px;
+        }
+    }
+
+    .CardViewCopy {
+        bottom: 1.3vw;
+        left: 1.1vw;
+        letter-spacing: 0.6px;
+    }
+}
+
+@media #{$mq-large} {
+    .CardContentWrap {
+        padding: 0.9vw 1vw;
+    }
+
+    .CardDetailsWrap {
+        width: 40%;
+    }
+}
+
+@media #{$mq-largest} {
+}

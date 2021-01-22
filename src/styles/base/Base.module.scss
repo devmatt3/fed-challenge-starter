@@ -1,0 +1,62 @@
+@import "../base/Setup.module.scss";
+
+h1 {
+    color: $white;
+    font-weight: 800;
+    font-size: mob(20px);
+}
+
+h2 {
+    text-align: start;
+    font-size: mob(14px);
+}
+
+h3 {
+    font-size: mob(10px);
+}
+
+h4 {
+    font-size: mob(8px);
+}
+
+@media #{$mq-small} {
+}
+
+@media #{$mq-medium}, print {
+    h1 {
+        font-size: tab(16px);
+    }
+
+    h2 {
+        font-size: tab(9px);
+    }
+
+    h3 {
+        font-size: tab(8px);
+    }
+
+    h4 {
+        font-size: tab(8px);
+    }
+}
+
+@media #{$mq-large} {
+    h1 {
+        font-size: des(24px);
+    }
+
+    h2 {
+        font-size: des(16px);
+    }
+
+    h3 {
+        font-size: des(14px);
+    }
+
+    h4 {
+        font-size: des(10px);
+    }
+}
+
+@media #{$mq-largest} {
+}

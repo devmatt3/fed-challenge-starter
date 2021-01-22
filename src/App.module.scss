@@ -1,0 +1,24 @@
+@import './styles/base/Base.module.scss';
+
+.App {
+    display: flex;
+    align-items: center;
+    font-family: $OS;
+    font-weight: 700;
+    color: $gray;
+}
+
+@media #{$mq-small} {
+}
+
+@media #{$mq-medium}, print {
+    .App {
+       height: 100vh;
+    }
+}
+
+@media #{$mq-large} {
+}
+
+@media #{$mq-largest} {
+}

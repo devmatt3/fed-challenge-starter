@@ -39,7 +39,7 @@ const Card = (props) => {
     }
     return (
         <div className={[styles.CardContainer, props.selectedCard ? styles.SelectedCard : ''].join(' ')}
-            onClick={(props.cardActionHandler, props.activeCardHandler)}
+            onClick={() => {props.cardActionHandler(); props.activeCardHandler();}}
             onMouseEnter={() => setViewDetails(true)}
             onMouseLeave={() => setViewDetails(false)}>
             <div className={styles.ImageContainer}>
